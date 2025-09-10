@@ -30,7 +30,7 @@ python manage.py runserver
 
 ## Token 
 POST http://localhost:8000/api/token/
-Ejemplo pedir los tokens para el administrador
+Ejemplo (Pedir las tokens de autentificacion)
 ```
 Content-Type: application/json
 {
@@ -47,8 +47,13 @@ GET /api/libros/{id}/ → detalle de un libro
 PUT/PATCH /api/libros/{id}/ → actualizar libro (solo admin)
 DELETE /api/libros/{id}/ → eliminar libro (solo admin)
 ```
+Ejemplo(Listado de todos los libros)
+```
+GET http://localhost:8000/api/libros/
+Authorization: Bearer <token>
+
+```
 ## Autores
-Ejemplo 
 ```
 GET /api/autores/ → listar autores
 POST /api/autores/ → crear autor (solo admin)
@@ -56,12 +61,17 @@ GET /api/autores/{id}/ → detalle de autor
 PUT/PATCH /api/autores/{id}/ → actualizar autor (solo admin)
 DELETE /api/autores/{id}/ → eliminar autor (solo admin)
 ```
+Ejemplo(Listado de todos los autores)
+```
+GET http://localhost:8000/api/libros/
+Authorization: Bearer <token>
+```
 ## Prestamos 
 ```
 POST /api/prestamos/prestamos/  (solicitar prestamos admin y lectores)
 GET /api/prestamos/mis-prestamos/(para ver los prestamos que tengo activos)
 ```
-Ejemplo pedir un prestamo 
+Ejemplo (para pedir un prestamo)
 ```
 POST http://localhost:8000/api/prestamos/ 
 Content-Type: application/json
