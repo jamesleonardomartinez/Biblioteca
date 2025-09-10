@@ -28,17 +28,22 @@ python manage.py runserver
 
 ### Endpoints principales
 ## libros 
+```
 GET /api/books/ → listar libros
 filtros: ?genre=Novela, ?author__id=1, ?available=true
 POST /api/books/ → crear libro (solo admin)
 GET /api/books/{id}/ → detalle de un libro
 PUT/PATCH /api/books/{id}/ → actualizar libro (solo admin)
 DELETE /api/books/{id}/ → eliminar libro (solo admin)
+```
 ## Autores
+```
 GET /api/authors/ → listar autores
 POST /api/authors/ → crear autor (solo admin)
 GET /api/authors/{id}/ → detalle de autor
 PUT/PATCH /api/authors/{id}/ → actualizar autor (solo admin)
 DELETE /api/authors/{id}/ → eliminar autor (solo admin)
+```
+## Prestamos 
 
 
