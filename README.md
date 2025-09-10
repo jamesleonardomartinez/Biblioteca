@@ -27,6 +27,17 @@ python manage.py createsuperuser para acceder a la vista de administrador
 python manage.py runserver
 
 ### Endpoints principales
+
+## Token 
+POST http://localhost:8000/api/token/
+Ejemplo pedir los tokens para el administrador
+```
+Content-Type: application/json
+{
+  "username": "admin",
+  "password": "test"
+}
+```
 ## libros 
 ```
 GET /api/libros/ → listar libros
@@ -37,6 +48,7 @@ PUT/PATCH /api/libros/{id}/ → actualizar libro (solo admin)
 DELETE /api/libros/{id}/ → eliminar libro (solo admin)
 ```
 ## Autores
+Ejemplo 
 ```
 GET /api/autores/ → listar autores
 POST /api/autores/ → crear autor (solo admin)
