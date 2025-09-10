@@ -26,7 +26,9 @@ python manage.py createsuperuser para acceder a la vista de administrador
 ## 6. Iniciar servidor
 python manage.py runserver
 
-### Autores
+## Endpoints principales
+#### libros 
+#### Autores
 GET /api/authors/ → listar autores
 POST /api/authors/ → crear autor (solo admin)
 GET /api/authors/{id}/ → detalle de autor
