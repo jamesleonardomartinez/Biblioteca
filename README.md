@@ -29,21 +29,25 @@ python manage.py runserver
 ### Endpoints principales
 ## libros 
 ```
-GET /api/books/ → listar libros
-filtros: ?genre=Novela, ?author__id=1, ?available=true
-POST /api/books/ → crear libro (solo admin)
-GET /api/books/{id}/ → detalle de un libro
-PUT/PATCH /api/books/{id}/ → actualizar libro (solo admin)
-DELETE /api/books/{id}/ → eliminar libro (solo admin)
+GET /api/libros/ → listar libros
+filtros: ?genero=Novela, ?autor__id=1, ?fecha_de_publicacion=, ?copias_disponibles=2
+POST /api/libros/ → crear libro (solo admin)
+GET /api/libros/{id}/ → detalle de un libro
+PUT/PATCH /api/libros/{id}/ → actualizar libro (solo admin)
+DELETE /api/libros/{id}/ → eliminar libro (solo admin)
 ```
 ## Autores
 ```
-GET /api/authors/ → listar autores
-POST /api/authors/ → crear autor (solo admin)
-GET /api/authors/{id}/ → detalle de autor
-PUT/PATCH /api/authors/{id}/ → actualizar autor (solo admin)
-DELETE /api/authors/{id}/ → eliminar autor (solo admin)
+GET /api/autores/ → listar autores
+POST /api/autores/ → crear autor (solo admin)
+GET /api/autores/{id}/ → detalle de autor
+PUT/PATCH /api/autores/{id}/ → actualizar autor (solo admin)
+DELETE /api/autores/{id}/ → eliminar autor (solo admin)
 ```
 ## Prestamos 
+```
+POST /api/prestamos/prestamos/  (solicitar prestamos admin y lectores)
+GET /api/prestamos/mis-prestamos/(para ver los prestamos que tengo activos)
+```
 
 
