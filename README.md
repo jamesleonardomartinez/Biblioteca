@@ -13,4 +13,6 @@ git clone https://github.com/tu-usuario/tu-repo.git
 cd tu-repo
 
 ---
-### Instalacion
+```
+## 2. Crear entorno virtual 
+
