@@ -83,5 +83,15 @@ Authorization:  Bearer <token>
   "returned": false
 }
 ```
+## Documentacion
+```
+GET api/esquema/
+GET /api/esquema/swagger-ui/
+GET api/esquema/redoc/
+```
+
+
+
+
 
 
