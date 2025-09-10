@@ -61,5 +61,17 @@ DELETE /api/autores/{id}/ → eliminar autor (solo admin)
 POST /api/prestamos/prestamos/  (solicitar prestamos admin y lectores)
 GET /api/prestamos/mis-prestamos/(para ver los prestamos que tengo activos)
 ```
+Ejemplo pedir un prestamo 
+```
+POST http://localhost:8000/api/prestamos/ 
+Content-Type: application/json
+Authorization:  Bearer <token>
+{
+  "libro_id": 3,
+  "start_date": "2025-09-10",
+  "due_date": "2025-09-20",
+  "returned": false
+}
+```
 
 
