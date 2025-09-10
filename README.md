@@ -22,9 +22,15 @@ pip install -r requirements.txt
 ## 4. Hacer la migracion
 python manage.py migrate
 ## 5. Crear el administrador
-python manage.py createsuperuser
+python manage.py createsuperuser para acceder a la vista de administrador 
 ## 6. Iniciar servidor
 python manage.py runserver
 
+### Autores
+GET /api/authors/ → listar autores
+POST /api/authors/ → crear autor (solo admin)
+GET /api/authors/{id}/ → detalle de autor
+PUT/PATCH /api/authors/{id}/ → actualizar autor (solo admin)
+DELETE /api/authors/{id}/ → eliminar autor (solo admin)
 
 
